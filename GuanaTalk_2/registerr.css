@@ -3,7 +3,7 @@
     --accent-green: #4caf50;
     --bg-cream: #fdf5e6;
     --card-yellow: #f9e6b3;
-    --btn-gold: #f0b440; /* El nuevo color amarillo para el botón */
+    --btn-gold: #f0b440; 
 }
 
 * {
@@ -37,9 +37,9 @@ body {
 .logo span { color: white; font-weight: bold; font-size: 1.5rem; }
 
 .profile-btn {
-    background-color: var(--accent-green); /* O #46BA37 si no usas variables */
-    border: 2px solid #000000;             /* Añade este borde negro grueso */
-    padding: 10px 25px;                    /* Ajusta el relleno para darle la forma alargada */
+    background-color: var(--accent-green); 
+    border: 2px solid #000000;             
+    padding: 10px 25px;                   
     border-radius: 25px;
     color: white;
     font-weight: bold;
@@ -49,10 +49,10 @@ body {
 }
 
 .profile-btn:hover {
-    background-color: #3fa332; /* Un verde un poco más oscuro al pasar el cursor */
+    background-color: #3fa332; 
 }
 
-/* HEADER DEL FORMULARIO */
+
 .form-card-header {
     background-color: var(--card-yellow);
     width: 100%;
@@ -71,7 +71,6 @@ body {
     margin: 0;
 }
 
-/* FORMULARIO CONTENEDOR */
 .forms {
     background-color: white;
     width: 100%;
@@ -84,7 +83,6 @@ body {
     box-shadow: 0px 10px 20px rgba(0,0,0,0.05);
 }
 
-/* GRID DE DOS COLUMNAS */
 .form-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -92,7 +90,6 @@ body {
     margin-bottom: 40px;
 }
 
-/* CADA BLOQUE DE ENTRADA */
 .form-group-container {
     display: flex;
     background-color: #fff;
@@ -102,16 +99,13 @@ body {
     height: 85px;
 }
 
-/* SELECCIÓN ESPECÍFICA DEL QUINTO ELEMENTO (Confirm Password) */
-/* Lo movemos al centro ocupando un espacio balanceado en la rejilla */
 .form-grid .form-group-container:nth-child(5) {
-    grid-column: 1 / -1; /* Hace que use el ancho completo del contenedor para poder centrarlo */
-    max-width: 530px;    /* Le damos el mismo ancho exacto que tienen los de arriba */
-    margin: 0 auto;      /* Centra automáticamente la caja en medio de la pantalla */
+    grid-column: 1 / -1; 
+    max-width: 530px;    
+    margin: 0 auto;      
     width: 100%;
 }
 
-/* COLUMNA DEL ICONO */
 .icon-column {
     width: 80px;
     display: flex;
@@ -121,7 +115,6 @@ body {
     color: #000;
 }
 
-/* Colores de fondo para las secciones de iconos */
 .side-name { background-color: #b2beb5; }
 .side-nationality { background-color: #d1c4e9; }
 .side-email { background-color: #e8d1c5; }
@@ -134,7 +127,6 @@ body {
     justify-content: center;
 }
 
-/* COLUMNA DEL INPUT Y SELECT */
 .input-column {
     display: flex;
     flex-direction: column;
@@ -175,7 +167,6 @@ body {
     color: #000;
 }
 
-/* TEXTO DE AYUDA INFERIOR */
 .help-text {
     position: absolute;
     bottom: -25px;
@@ -188,11 +179,10 @@ body {
     margin: 0;
 }
 
-/* BOTÓN REGISTRO (Cambiado de Rojo a Amarillo) */
 .register-btn {
-    background-color: var(--btn-gold); /* Usa el color amarillo de las variables */
-    color: black;                      /* Texto negro para un contraste perfecto y legible */
-    border: 3.5px solid #000;          /* Borde negro grueso a juego con el estilo de la app */
+    background-color: var(--btn-gold); 
+    color: black;                      
+    border: 3.5px solid #000;          
     padding: 15px 80px;
     border-radius: 40px;
     font-size: 1.8rem;
@@ -203,16 +193,15 @@ body {
 }
 
 .register-btn:hover {
-    background-color: #e2a42b; /* Un tono amarillo un poco más oscuro al pasar el cursor */
+    background-color: #e2a42b; 
 }
 
 .register-btn:active {
-    transform: scale(0.98);    /* Efecto de clic al presionarlo */
+    transform: scale(0.98);   
 }
 
-/* SECCIÓN FUN FACT INFERIOR */
 .fun-fact {
-    background-color: #fff;
+    background-color: #f9e6b3;
     border: 3.5px solid #000;
     border-radius: 20px;
     width: 100%;
@@ -254,14 +243,14 @@ body {
     cursor: pointer;
 }
 
-/* RESPONSIVE PARA PANTALLAS PEQUEÑAS */
+
 @media (max-width: 992px) {
     .form-grid {
         grid-template-columns: 1fr;
         gap: 25px;
     }
     .form-grid .form-group-container:nth-child(5) {
-        max-width: 100%; /* En teléfonos vuelve a ocupar el ancho completo normal */
+        max-width: 100%; 
     }
     .forms {
         padding: 30px 20px;

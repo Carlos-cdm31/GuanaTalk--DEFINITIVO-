@@ -56,10 +56,12 @@
     <p>Traditions</p>
   </button>
 
-  <button type="button" class="card orange">
-    <img src="img/legends.jpeg" alt="Legends" class="card-img">
-    <p>Legends</p>
-  </button>
+  <a href="legends.html" class="card orange">
+    <div class="img-wrap">
+        <img src="img/legends.jpeg" alt="Legends">
+    </div>
+    <p>Legends</p>  
+</a>
 
   <button type="button" class="card blue">
     <img src="img/funfact.jpeg" alt="Fun Facts" class="card-img">
@@ -171,14 +173,12 @@
     const dropdownMenu = document.getElementById('menuLinesDropdown');
     
     if (dropdownMenu) {
-        // Al dar clic al cuadro de las 3 líneas abre o cierra las opciones
         dropdownMenu.addEventListener('click', function(event) {
             event.stopPropagation(); 
             this.classList.toggle('active');
         });
     }
 
-    // Al dar clic en cualquier otra parte de la pantalla se cierra solo
     document.addEventListener('click', function() {
         if (dropdownMenu) {
             dropdownMenu.classList.remove('active');

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GuanaTalk - Login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="login.css">
 </head>
 <body>
@@ -14,7 +15,6 @@
                 <span>GuanaTalk</span>
             </a>
         </div>
-        
         <button class="profile-btn">My Profile</button>
     </header>
 
@@ -23,8 +23,11 @@
             <h1>GuanaTalk Login: Start Your Journey</h1>
             
             <form action="php/login.php" method="POST">
+                
                 <div class="input-group">
-                    <div class="icon-box email-icon">📧</div>
+                    <div class="icon-box email-icon">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
                     <div class="input-field">
                         <label>Email Address</label>
                         <input type="email" name="email" placeholder="Enter your email" required>
@@ -32,7 +35,9 @@
                 </div>
 
                 <div class="input-group">
-                    <div class="icon-box lock-icon">🔒</div>
+                    <div class="icon-box lock-icon">
+                        <i class="fa-solid fa-lock"></i>
+                    </div>
                     <div class="input-field">
                         <label>Password</label>
                         <input type="password" name="password" placeholder="Enter your password" required>
@@ -48,11 +53,10 @@
 
                 <button type="submit" class="login-btn">Login</button>
             </form>
-
         </div>
 
         <div class="fun-fact-bar">
-            <span class="megaphone">📢</span>
+            <span class="megaphone"><i class="fa-solid fa-bullhorn"></i></span>
             <p><strong>Fun Fact:</strong> Did you know the marble game is known in El Salvador as "chibolas"?</p>
             <span class="arrow">❯</span>
         </div>

@@ -94,23 +94,22 @@ nav a {
     background-color: #eee;
 }
 
-/* SECCIÓN DEL PERFIL Y EL BOTÓN INDEPENDIENTE DE LÍNEAS */
+
 .profile-section {
     display: flex;
     align-items: center;
-    gap: 12px; /* Espacio entre el cuadro de líneas y el botón de My Profile */
-}
+    gap: 12px;
+  }
 
-/* Contenedor del Botón de 3 Líneas y su Desplegable */
 .menu-lines-dropdown {
     position: relative;
     display: inline-block;
 }
 
-/* El cuadro con las 3 líneas */
+
 .menu-lines-btn {
     border: 2px solid #000;
-    background: #ead9b5; /* Tono beige/madera a juego con la app */
+    background: #ead9b5; 
     color: black;
     width: 45px;
     height: 42px;
@@ -128,7 +127,7 @@ nav a {
     background-color: #d8c7a3;
 }
 
-/* Botón Verde My Profile Puro */
+
 .profile-btn {
     background: #46BA37;
     border: 2px solid #000;
@@ -145,9 +144,9 @@ nav a {
     background: #3fa332;
 }
 
-/* SUBMENÚ DESPLEGABLE (ASOCIADO AL CUADRO DE LÍNEAS) */
+
 .dropdown-content {
-    display: none; /* Oculto por defecto */
+    display: none; 
     position: absolute;
     right: 0;
     top: 120%;
@@ -180,7 +179,7 @@ nav a {
     background-color: #000;
 }
 
-/* Muestra el menú cuando JavaScript activa la clase .active */
+
 .menu-lines-dropdown.active .dropdown-content {
     display: block;
     animation: slideDown 0.3s ease;
@@ -216,7 +215,7 @@ nav a {
 
 .hero-text p {
     color: #333;
-    font-size: 18px;
+    font-size: 40px;
     margin: 20px;
     padding: 10px;
 }
